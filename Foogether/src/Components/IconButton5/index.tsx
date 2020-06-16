@@ -9,7 +9,6 @@ const Icon = Styled.Image`
   height: 20px;
   margin-top: 15px;
   marginRight: 48px;
-  
 `;
 
 
@@ -18,6 +17,7 @@ const Label = Styled.Text`
   font-size: 20px;
   margin-left: 20px;
   padding: 10px;
+  font-family: 'neodgm';
 
 `;
 
@@ -50,7 +50,7 @@ interface Props {
   onPress?: () => void;
 }
 
-const IconButton2 = ({ iconName, style, label, onPress }: Props) => {
+const IconButton5 = ({ iconName, style, label, onPress }: Props) => {
   const imageSource = {
     camera: require('~/Assets/Images/ic_camera.png'),
     live: require('~/Assets/Images/ic_live.png'),
@@ -86,6 +86,6 @@ const IconButton2 = ({ iconName, style, label, onPress }: Props) => {
   );
 };
 
-export default IconButton2;
+export default IconButton5;
 
 

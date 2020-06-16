@@ -26,11 +26,14 @@ const ProfileImage = Styled.Image`
 const UserName = Styled.Text`
   font-weight: bold;
   margin-left: 8px;
+  font-family: 'neodgm';
 `;
 const FeedFooter = Styled.View`
   padding: 0px 8px;
 `;
-const Description = Styled.Text``;
+const Description = Styled.Text`
+font-family: 'neodgm';
+`;
 
 interface Props {
   id: number;

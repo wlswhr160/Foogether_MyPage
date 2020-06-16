@@ -11,6 +11,7 @@ const StyleButton = Styled.TouchableOpacity`
 `;
 const Label = Styled.Text`
   color: #FFFFFF;
+  font-family: 'neodgm';
 `;
 
 interface Props {

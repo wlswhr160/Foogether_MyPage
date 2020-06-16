@@ -12,6 +12,7 @@ const Icon = Styled.Image`
 const Label = Styled.Text`
   color: #363636;
   font-size: 1px;
+  font-family: 'neodgm';
 `;
 
 interface Props {

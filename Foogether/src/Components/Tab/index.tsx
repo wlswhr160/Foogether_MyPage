@@ -14,6 +14,8 @@ const Label = Styled.Text`
   font-size: 16px;
   color: #929292;
   text-align: center;
+  font-family: 'neodgm';
+
 `;
 const TabImage = Styled.Image`
   margin-top: 8px;

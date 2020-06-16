@@ -15,6 +15,7 @@ const InputField = Styled.TextInput`
   height: 100%;
   textAlignVertical: top;
   margin-left: 16px;
+  font-family: 'neodgm';
 `;
 
 interface Props {

@@ -7,15 +7,14 @@ const Container = Styled.TouchableOpacity`
 const Icon = Styled.Image`
   width: 20px;
   height: 20px;
-  
 `;
-
 
 const Label = Styled.Text`
   color: #363636;
   font-size: 20px;
   margin-left: 20px;
   padding: 10px;
+  font-family: 'neodgm';
 
 `;
 
@@ -48,7 +47,7 @@ interface Props {
   onPress?: () => void;
 }
 
-const IconButton2 = ({ iconName, style, label, onPress }: Props) => {
+const IconButton3 = ({ iconName, style, label, onPress }: Props) => {
   const imageSource = {
     camera: require('~/Assets/Images/ic_camera.png'),
     live: require('~/Assets/Images/ic_live.png'),
@@ -84,6 +83,6 @@ const IconButton2 = ({ iconName, style, label, onPress }: Props) => {
   );
 };
 
-export default IconButton2;
+export default IconButton3;
 
 

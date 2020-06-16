@@ -7,8 +7,9 @@ const Container = Styled.TouchableOpacity`
 const Icon = Styled.Image`
   width: 30px;
   height: 30px;
-  margin-right: 110px;
+  left: 20px;
   margin-top: -5px;
+
   
 `;
 
@@ -17,7 +18,7 @@ const Label = Styled.Text`
   color: #363636;
   font-size: 20px;
   margin-left: 40px;
-
+  font-family: 'neodgm';
 `;
 
 const LabelContainer = Styled.View`

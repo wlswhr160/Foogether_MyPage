@@ -14,6 +14,7 @@ const Container = Styled.View`
 const InputField = Styled.TextInput`
   flex: 1;
   color: #292929;
+  font-family: 'neodgm';
 `;
 
 interface Props {
