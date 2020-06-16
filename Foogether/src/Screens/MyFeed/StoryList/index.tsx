@@ -26,6 +26,8 @@ const StoryImage = Styled.Image`
 const StoryName = Styled.Text`
   width: 100%;
   text-align: center;
+  font-family: 'neodgm';
+
 `;
 
 interface Props {

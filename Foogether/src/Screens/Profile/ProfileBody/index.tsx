@@ -9,9 +9,11 @@ const Container = Styled.View`
 const LabelName = Styled.Text`
   font-weight: bold;
   margin-bottom: 8px;
+  font-family: 'neodgm';
 `;
 const LabelDescription = Styled.Text`
   line-height: 20px;
+  font-family: 'neodgm';
 `;
 
 interface Props {

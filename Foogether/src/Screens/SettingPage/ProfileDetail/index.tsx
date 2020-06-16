@@ -13,7 +13,7 @@ const Container = Styled.View`
 const LabelContainer = Styled.TouchableOpacity`
   flex-direction: row;
   border: 1px;
-  border-color: #bdbdbf;
+  border-color: #ebebeb;
   top: 35px;
   padding: 6px;
   margin-bottom: 5px;
@@ -44,6 +44,8 @@ const Label = Styled.Text`
   margin-top: 10px;
   margin-bottom: 10px;
   left: 15px;
+  font-family: 'neodgm';
+
 `;
 
 const Label1 = Styled.Text`
@@ -52,6 +54,8 @@ const Label1 = Styled.Text`
   margin-bottom: 10px;
   left: 15px;
   color: #ff0000;
+  font-family: 'neodgm';
+
 `;
 
 const SubLabelContainer = Styled.View`
@@ -66,52 +70,53 @@ const SubLabel = Styled.Text`
   color: #b5b3b3;
   top: 10px;
   right: 35px;
+  font-family: 'neodgm';
+
 `;
 
-const ProfileDetail = () => {
+type NavigationProp = StackNavigationProp<ProfileTabParamList, 'Profile'>;
+
+interface Props {
+  navigation: NavigationProp;
+}
+
+
+const ProfileDetail = ({navigation}: Props) => {
   return (
     <Container>
 
-        <LabelContainer>
-            <Label>연락처</Label>
+        <LabelContainer onPress={() => {navigation.navigate('PhoneNum');}}>
+            <Label>전화번호</Label>
             <SubLabelContainer>
                 <SubLabel>010-9508-2490</SubLabel>
             </SubLabelContainer>
         <ButtonController1>
-            <IconButton6 iconName="next" />
+            <IconButton6 onPress={() => {navigation.navigate('PhoneNum');}} iconName="next" />
         </ButtonController1>
         </LabelContainer>
 
-        <LabelContainer>
+        <LabelContainer onPress={() => {navigation.navigate('Email');}}>
             <Label>이메일</Label>
             <SubLabelContainer>
                 <SubLabel>wlswhr160@naver.com</SubLabel>
             </SubLabelContainer>
         <ButtonController1>
-            <IconButton6 iconName="next" />
+            <IconButton6 onPress={() => {navigation.navigate('Email');}} iconName="next" />
         </ButtonController1>
         </LabelContainer>
 
-        <LabelContainer>
-            <Label>SNS 연동</Label>
-            <ButtonController2>
-                <IconButton6 iconName="next" />
-            </ButtonController2>
-        </LabelContainer>
 
-        <Label></Label>
-
-        <LabelContainer>
+        <LabelContainer onPress={() => {navigation.navigate('ChangePassword');}}>
             <Label>비밀번호 변경</Label>
         <ButtonController3>
-            <IconButton6 iconName="next" />
+            <IconButton6 onPress={() => {navigation.navigate('ChangePassword');}} iconName="next" />
         </ButtonController3>
         </LabelContainer>
 
-        <LabelContainer>
+        <LabelContainer onPress={() => {navigation.navigate('Withdrawal');}}>
             <Label1>회원 탈퇴</Label1>
-            <ButtonController>
-                <IconButton6 iconName="next" />
+            <ButtonController >
+                <IconButton6 onPress={() => {navigation.navigate('Withdrawal');}} iconName="next" />
             </ButtonController>
         </LabelContainer>
             

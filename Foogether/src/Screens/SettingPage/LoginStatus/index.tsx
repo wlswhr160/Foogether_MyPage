@@ -5,21 +5,17 @@ import Button from '~/Components/Button';
 import {UserContext} from '~/Context/User';
 
 
-
-import Input from '~/Components/Input';
-import IconButton from '~/Components/IconButton';
-import Tab from '~/Components/Tab';
-import { ScaleFromCenterAndroid } from '@react-navigation/stack/lib/typescript/src/TransitionConfigs/TransitionPresets';
-
 const Container = Styled.View`
   background-color: #FFFFFF;
   flex: 1;
 `;
 
+
 const LabelContainer = Styled.View`
   flex-direction: row;
   alignItems: center;
-  top: 50px;
+  top: 100px;
+  right: 45px;
   background-color: #FEFFFF;
   border-color: #d6d6d6;
   padding-left: 70px;
@@ -35,7 +31,16 @@ const ProfileItem = Styled.View`
   align-items: center;
 `;
 
-const Label = Styled.Text``;
+const Label = Styled.Text`
+  font-size: 20px;
+  font-family: 'neodgm';
+`;
+
+const Label2 = Styled.Text`
+  font-size: 20px;
+  font-family: 'neodgm';
+  left: 130px;
+`;
 
 const BottomContainer = Styled.TouchableOpacity`
   align-items: center;
@@ -61,7 +66,10 @@ const LoginStatus = ({nickname}: Props) => {
                 nickname="POPPI"
             />
             </NicknameContainer>
-         <Label>{nickname} 님으로 로그인 되어 있습니다.</Label>
+         <Label>{nickname} 님으로</Label>
+      </LabelContainer>
+      <LabelContainer>
+         <Label2>로그인 되어 있습니다.</Label2>
       </LabelContainer>
       <BottomContainer>
         <Button onPress={() => {

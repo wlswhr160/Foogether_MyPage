@@ -10,6 +10,7 @@ import Styled from 'styled-components/native';
 
 import {RandomUserDataContext} from '~/Context/RandomUserData';
 import Tab from '~/Components/Tab';
+
 import PushList from './PushList';
 
 const ProfileTabContainer = Styled.SafeAreaView`
@@ -23,7 +24,8 @@ const TabContainer = Styled.View`
   height: ${Dimensions.get('window').height}px;
 `;
 
-interface Props {}
+interface Props {
+}
 
 const PushPage = ({}: Props) => {
   const {getMyFeed} = useContext(RandomUserDataContext);

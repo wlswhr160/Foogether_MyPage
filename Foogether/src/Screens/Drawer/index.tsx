@@ -13,7 +13,9 @@ const Header = Styled.View`
   border-color: #D3D3D3;
   padding: 8px 16px;
 `;
-const Title = Styled.Text``;
+const Title = Styled.Text`
+font-family: 'neodgm';
+`;
 const Button = Styled.TouchableHighlight`
   padding: 8px 16px;
 `;
@@ -26,6 +28,7 @@ const Icon = Styled.Image`
 `;
 const Label = Styled.Text`
   font-size: 16px;
+  font-family: 'neodgm';
 `;
 const Footer = Styled.View`
   width: 100%;

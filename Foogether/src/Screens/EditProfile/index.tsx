@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { StackNavigationProp } from '@react-navigation/stack';
 import {Alert} from 'react-native';
 
 import Styled from 'styled-components/native';
 
 import ImagePicker from 'react-native-image-picker';
 import Input from '~/Components/Input';
+import Button from '~/Components/Button';
 
 const Container = Styled.View`
   flex: 1;
@@ -16,6 +18,10 @@ const Container = Styled.View`
 const ProfileImageContainer = Styled.View`
   padding: 16px;
   margin-bottom: -16px;
+`;
+
+const ButtonContainer = Styled.View`
+  align-items: center;
 `;
 
 const ProfileImage = Styled.Image`
@@ -38,10 +44,18 @@ const ImagePickerButton = Styled.TouchableOpacity`
 
 const LabelContainer = Styled.View``;
 
-const LabelTitle = Styled.Text``;
-const Label = Styled.Text``;
 
-const App = (): JSX.Element => {
+const Label = Styled.Text`
+  font-family: 'neodgm';
+`;
+
+type NavigationProp = StackNavigationProp<ProfileTabParamList, 'Profile'>
+
+interface Props {
+  navigation: NavigationProp;
+}
+
+const EditProfile = ({navigation}: Props): JSX.Element => {
   const [imageSource, setImageSource] = useState<string|undefined>(undefined);
   const options = {
     title: 'Load Photo',
@@ -106,11 +120,18 @@ const App = (): JSX.Element => {
       <LabelContainer>
         <Input
           style={{marginBottom: 16, marginTop: 16, paddingLeft: 100, paddingRight: 100}}
-          placeholder="닉네임 변경"
+          placeholder="닉네임 변경    "
         />
       </LabelContainer>
+      <ButtonContainer>
+        <Button
+          label="확인"
+          style={{width: 150, height: 45}}
+          onPress={() => {navigation.navigate('Profile');}}
+        />
+      </ButtonContainer>
     </Container>
   );
 };
 
-export default App;
+export default EditProfile;

@@ -36,6 +36,7 @@ const LabelCategory = Styled.Text`
   border-color: #c3c3c3;
   margin-left: 30px;
   margin-right: 30px;
+  font-family: 'neodgm';
   
 `;
 
@@ -57,6 +58,7 @@ const ProfileLabel = Styled.View`
 const LabelTitle = Styled.Text`
   font-size: 20px;
   color: #4a4a4a;
+  font-family: 'neodgm';
 `;
 
 const LabelBox = Styled.View`
@@ -77,6 +79,7 @@ const Label = Styled.Text`
   border-bottom-width: 1px;
   border-color: #c3c3c3;
   margin-right: 200px;
+  font-family: 'neodgm';
 `;
 
 const LabelContent = Styled.Text`
@@ -84,6 +87,7 @@ const LabelContent = Styled.Text`
   color: #828282;
   margin-left: 10px;
   margin-bottom: 13px;
+  font-family: 'neodgm';
 `;
 
 const LabelTouchable = Styled.TouchableOpacity`
@@ -99,6 +103,7 @@ const LabelTouchable = Styled.TouchableOpacity`
 const LabelEnd = Styled.Text`
   font-size: 25px;
   textAlign: center;
+  font-family: 'neodgm';
 `;
 
 

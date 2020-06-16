@@ -9,11 +9,6 @@ import Button from '~/Components/Button';
 import Tab from '~/Components/Tab';
 import { NavigationContainer } from '@react-navigation/native';
 
-const MyMeetTabContaienr = Styled.View`
-  flex-direction: row;
-  background-color: #F5F5F5;
-  `;
-  
 
 const Container = Styled.View`
 flex: 1;
@@ -22,12 +17,10 @@ align-items: center;
 `;
 
 const FeedContainer = Styled.View`
-
   background-color: #FFFFFF;
 `;
 
 const LabelContainer = Styled.TouchableOpacity`
-
   border-bottom-width: 1px;
   border-color: #e3e3e3;
 `;
@@ -38,7 +31,7 @@ const LabelTitle = Styled.Text`
   font-size: 20px;
   color: #5c5c5c;
   border-color: #b0b0b0;
-  
+  font-family: 'neodgm';
 `;
 
 

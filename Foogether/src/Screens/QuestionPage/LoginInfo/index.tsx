@@ -19,6 +19,7 @@ const Label = Styled.Text`
   margin-bottom: 16px;
   font-size: 20px;
   color: #4a4a4a;
+  font-family: 'neodgm';
 `;
 
 

@@ -21,7 +21,10 @@ import Input from '~/Components/Input';
 import IconButton from '~/Components/IconButton';
 import Tab from '~/Components/Tab';
 
-const Label = Styled.Text``;
+const Label = Styled.Text`
+font-family: 'neodgm';
+
+`;
 
 const MeetDone = () => {
   return (

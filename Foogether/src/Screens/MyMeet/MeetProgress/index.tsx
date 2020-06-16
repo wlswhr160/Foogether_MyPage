@@ -34,6 +34,8 @@ const LabelContainer = Styled.View`
 
 const LabelTitle0 = Styled.Text`
   margin-bottom: 30px;
+  font-family: 'neodgm';
+
 `;
 
 const LabelTitle1 = Styled.Text`
@@ -42,6 +44,8 @@ const LabelTitle1 = Styled.Text`
   margin-top: 20px;
   margin-bottom: 20px;
   textAlign: center;
+  font-family: 'neodgm';
+
   
 
 `;

@@ -18,8 +18,9 @@ const Label = Styled.Text`
 font-size: 17px;
 margin-top: 15px;
 margin-bottom: 15px;
-margin-left: 40px;
+margin-left: 55px;
 color: #757578;
+font-family: 'neodgm';
 `;
 
 

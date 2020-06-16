@@ -8,7 +8,9 @@ const Container = Styled.View`
   align-items: center;
 `;
 
-const Label = Styled.Text``;
+const Label = Styled.Text`
+font-family: 'neodgm';
+`;
 
 const mainSearch = () => {
   return (

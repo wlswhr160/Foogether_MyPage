@@ -26,6 +26,8 @@ const Logo = Styled.Text`
   font-weight: bold;
   text-align: center;
   margin-bottom: 40px;
+  font-family: 'neodgm';
+
 `;
 
 const PasswordReset = Styled.Text`
@@ -33,14 +35,20 @@ const PasswordReset = Styled.Text`
   color: #3796EF;
   text-align: right;
   margin-bottom: 24px;
+  font-family: 'neodgm';
+
 `;
 
 const SignupText = Styled.Text`
   color: #929292;
   text-align: center;
+  font-family: 'neodgm';
+
 `;
 const SignupLink = Styled.Text`
   color: #3796EF;
+  font-family: 'neodgm';
+
 `;
 
 const Footer = Styled.View`
@@ -52,6 +60,8 @@ const Footer = Styled.View`
 const Copyright = Styled.Text`
   color: #929292;
   text-align: center;
+  font-family: 'neodgm';
+
 `;
 
 type NavigationProp = StackNavigationProp<LoginNaviParamList, 'Login'>;

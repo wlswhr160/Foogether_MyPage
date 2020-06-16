@@ -13,10 +13,12 @@ const ProfileImage = Styled.Image`
 `;
 const LabelName = Styled.Text`
   font-weight: bold;
+  font-family: 'neodgm';
 `;
 const Message = Styled.Text`
   flex: 1;
   padding:0 16px;
+  font-family: 'neodgm';
 `;
 const PostImage = Styled.Image``;
 

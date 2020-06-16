@@ -21,6 +21,9 @@ const ProfileItem = Styled.View`
 `;
 
 const Label = Styled.Text`
+
+  font-family: 'neodgm';
+
 `;
 
 import Input from '~/Components/Input';

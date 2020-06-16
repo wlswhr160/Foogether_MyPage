@@ -55,40 +55,19 @@ flex-direction: row;
 margin-top: 30px;
 border: 0.5px;
 border-color: #c4c4c4
-background-color: #fcfcfc;
+background-color: #ffffff;
 padding: 10px;
 `;
 
 
-const IconCombi1 = Styled.View`
-width: 100px;
-flex-direction: row;
-color: #363636;
-border-color: #c4c4c4;
-border-width: 1px;
-border-radius: 10px;
-border-bottom-width: 1px;
-`;
-
 const IconCombi2 = Styled.View`
-width: 100px;
-flex-direction: row;
+width: 400px;
 color: #363636;
 border-color: #c4c4c4;
 border-width: 1px;
 border-radius: 10px;
-border-bottom-width: 1px;
 `;
 
-const IconCombi3 = Styled.View`
-width: 100px;
-flex-direction: row;
-color: #363636;
-border-color: #c4c4c4;
-border-width: 1px;
-border-radius: 10px;
-border-bottom-width: 1px;
-`;
 
 const FeedContainer = Styled.View`
 `;
@@ -107,12 +86,15 @@ const LabelTitle = Styled.Text`
   font-size: 20px;
   margin-top: -100px;
   margin-left: 160px;
+  font-family: 'neodgm';
 `;
 
-const NextIcon = Styled.View`
-  margin-left: 340px;
-  opacity: 0.3;
-  margin-top: -25px;
+const Label = Styled.Text`
+  font-size: 25px;
+  font-family: 'neodgm';
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 10px;
 `;
 
 
@@ -176,25 +158,16 @@ const Profile = ({image, nickname, navigation}: Props) => {
         />
       <IconContainer>
           <ProfileItem>
-          <IconCombi1 >
-          <IconButton2 onPress={() => {navigation.navigate('MyProd');}} iconName="prod" label="판매"/>
-          </IconCombi1>
-          </ProfileItem>
-          <ProfileItem>
           <IconCombi2>
-          <IconButton2 onPress={() => {navigation.navigate('MyMeet');}} iconName="meet" label="모임"/>
+          <IconButton2 onPress={() => {navigation.navigate('MyMeet');}} iconName="meet"/>
           </IconCombi2>
-          </ProfileItem>
-          <ProfileItem>
-            <IconCombi3>
-         <IconButton2 onPress={() => {navigation.navigate('MySpace');}} iconName="space" label="공간"/>
-         </IconCombi3>
+          <Label>모임</Label>
           </ProfileItem>
         </IconContainer>
 
         <FeedContainer>
             <LabelContainer>
-              <IconButton4 onPress={() => {navigation.navigate('PushPage');}} iconName="next" label="알람" />
+              <IconButton4 onPress={() => {navigation.navigate('PushPage');}} iconName="next" label="알림" />
             </LabelContainer>
             <LabelContainer>
               <IconButton4 onPress={() => {navigation.navigate('SettingPage');}} iconName="next" label="설정" />
